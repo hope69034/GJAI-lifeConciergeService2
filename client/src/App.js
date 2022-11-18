@@ -1,6 +1,6 @@
 import Signup from './pages/Signup';
 import Calendar from './pages/Calendar';
-import Test from './pages/Test';
+/* import Test from './pages/Test'; */
 import { Routes, Route, BrowserRouter} from 'react-router-dom';
 import UserInfo from './pages/UserInfo';
 import { useEffect } from 'react';
@@ -30,7 +30,7 @@ function App() {
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/userInfo" element={<UserInfo/>}/>
           <Route path="/addEvent" element={<AddEvent/>}/>
-          <Route path="/test" element={<Test/>}/>
+         {/*  <Route path="/test" element={<Test/>}/> */}
         </Routes>
         <LabelBottomNavigation/>
       </BrowserRouter>

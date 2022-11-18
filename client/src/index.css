@@ -1,13 +1,38 @@
+/* 승민 */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* 세형 */
+
+/* 홈_어젠다 */
+.mbsc-event-group.mbsc-material {
+  background: rgb(255, 255, 255);
+}
+/* 홈_+버튼 */
+.MuiBox-root.css-in5br9 {
+  z-index: 10;
+}
+/* 맨아래.헤더*/
+.MuiBottomNavigation-root.css-3mtf2r-MuiBottomNavigation-root {
+  z-index: 10;
+}
+/* 캘린더.윈도버전몇개더보기 */
+.mbsc-windows.mbsc-calendar-text-more .mbsc-calendar-label-text{
+  font-weight: 600;
+  content: url("./img/iconUnder.png"); 
+}
+/* 캘린더.윈도우.월화수목 */
+.mbsc-windows.mbsc-calendar-body .mbsc-calendar-week-day{
+  color: #0078d7;
 }
