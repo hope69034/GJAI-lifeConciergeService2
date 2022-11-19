@@ -23,9 +23,14 @@ code {
 .MuiBox-root.css-in5br9 {
   z-index: 20;
 }
-/* 맨아래.헤더*/
+/* 푸터  바텀메뉴 */
 .MuiBottomNavigation-root.css-3mtf2r-MuiBottomNavigation-root {
   z-index: 20;
+}
+/* 푸터 바텀메뉴 */
+.MuiBottomNavigation-root{
+  background:#73baad;
+
 }
 /* 캘린더.윈도버전몇개더보기 */
 .mbsc-windows.mbsc-calendar-text-more .mbsc-calendar-label-text{
@@ -36,5 +41,10 @@ code {
 .mbsc-windows.mbsc-calendar-body .mbsc-calendar-week-day{
   color: #0078d7;
 }
- 
- 
+/* 로그인화면 캐릭터 이미지 */
+.greenihead{
+  width:40%;
+  margin:10%;
+  margin-left:30.2%;
+  margin-right:30.2%;
+}

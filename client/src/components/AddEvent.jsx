@@ -48,7 +48,10 @@ const AddEvent = () => {
   }
 
   return (
-    <Box sx={{width:"80%", m:"auto", mt:"60px"}}>
+    
+     
+    <Box sx={{width:"80%", m:"auto", mt:"60px" }}>
+
       <FormControlLabel control={<Switch name="isDaily" onChange={handleDailyRoutin} />} label="일상루틴" /><br/>
         {checkDaily?<CheckWeeks checkWeeks={checkWeeks} setCheckWeeks={setCheckWeeks}/>:""}
       <Stack spacing={1}>

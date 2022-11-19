@@ -6,6 +6,8 @@ import {useDispatch} from 'react-redux';
 import SnackBar from './FreqCompo/Snackbar';
 import Progress from './FreqCompo/Progress'
 
+import greenihead from '../img/greenihead.png'
+
 const Login = () => {
   const nav = useNavigate();
   const emailRef = useRef(); //사용자가 적은 email input 태그에 할당된 Ref  
@@ -40,7 +42,21 @@ const Login = () => {
     pwRef.current.value = "";
   }
   return (
-    <div style={{margin:"auto", width:"80%", border:"1px solid black", padding:"20px", marginTop:"150px"}}>
+    <>
+    
+    
+{/* 
+      <div style={{ backgrounImage : "url(" + greenihead + ")" }}> 
+     <img src='../img/greenihead.png' className='greenihead'></img>   
+ <div style={{backgrounImage : "url(" + greenihead + ")"  }}>  */}
+ 
+
+    <img src={ greenihead } className={'greenihead'} /> 
+
+
+    <div style={{   margin:"auto", width:"80%", border:"1px solid black", padding:"20px"}}> 
+    
+      
       <FormControl fullWidth>
         <TextField inputRef={emailRef} label='이메일' name='email' onChange={(e)=>{emailRef.current.value = e.target.value}}/><br></br>
         <TextField inputRef={pwRef} label='비밀번호' name='pw' type="password" onChange={(e)=>{pwRef.current.value = e.target.value;}}/><br></br>
@@ -50,6 +66,10 @@ const Login = () => {
       <SnackBar/>
       <Progress/>
     </div>
+
+
+
+    </>
   )
 }
 

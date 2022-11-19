@@ -11,7 +11,7 @@ import Home from './pages/Home'
 import LabelBottomNavigation from './components/LabelBottomNavigation';
 import AddEvent from './components/AddEvent';
 
-
+import Door from './pages/Door';
 
 
 function App() {
@@ -24,24 +24,38 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>  
       
+     
+      <BrowserRouter>  
         <Routes>
-          <Route path="/" element={<Home/>}/>{/* timeline */}
+          <Route path="/home" element={<Home/>}/>{/* timeline */}
           <Route path="/calendar" element={<Calendar/>}/>
           <Route path="/myProfile" element={<MyProfile/>}/>
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/userInfo" element={<UserInfo/>}/>
           <Route path="/addEvent" element={<AddEvent/>}/>
+
+          <Route path="/" element={<Door/>}/>
+
          {/*  <Route path="/test" element={<Test/>}/> */}
         </Routes>
+       
+        <LabelBottomNavigation></LabelBottomNavigation>
+        
+      </BrowserRouter>
       
       {/* 앱하단 메뉴 */}
-      <LabelBottomNavigation/>
       
-      </BrowserRouter>
     </div>
+  
+
   );
 }
 
 export default App;
+
+
+
+
+
+

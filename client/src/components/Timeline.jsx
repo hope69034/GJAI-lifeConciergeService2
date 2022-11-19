@@ -12,7 +12,20 @@ import React from "react";
 import "@mobiscroll/react/dist/css/mobiscroll.min.css";
 /* import "@mobiscroll/react/dist/css/mobiscroll.css"; */
 
+
+
+/* mui css에 css파일을 오버라이딩 하기 위한*/
+import { CacheProvider } from '@emotion/react';
+import createCache from '@emotion/cache';
+const cache = createCache({
+  key: 'css',
+  prepend: true,
+});
+
+
+
 setOptions({
+  /* 한국어버전 */
   locale: localeKo,
   /* theme: 'material', */
   theme: "windows",
@@ -48,7 +61,14 @@ function Timeline() {
 
 
   return (
+
+     <div>
+     {/* mui css에 css파일을 오버라이딩 하기 위한 */}
+        <CacheProvider value={cache}>
+
+
     <Eventcalendar
+    
       clickToCreate={true}
       dragToCreate={true}
       dragToMove={false}
@@ -64,6 +84,12 @@ function Timeline() {
 
       ////
     />
+     
+   
+
+     </CacheProvider>
+     </div>
+    
   );
 }
 

@@ -1,13 +1,15 @@
 import AddEventButton from '../components/FreqCompo/AddEventButton';
 import Timeline from '../components/Timeline';
 
+/* import LabelBottomNavigation from '../components/LabelBottomNavigation'; */
+
 export default () => {
   return(
     <>
-    
-      <Timeline></Timeline>
-      
+  
      <AddEventButton/> 
+      <Timeline></Timeline>
+ 
       </>
   );
 }
