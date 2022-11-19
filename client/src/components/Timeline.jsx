@@ -27,8 +27,10 @@ const cache = createCache({
 setOptions({
   /* 한국어버전 */
   locale: localeKo,
-  /* theme: 'material', */
-  theme: "windows",
+   /* theme: 'material', */  
+    /*    theme: "ios",   */
+         theme: "windows",   
+   /*  theme: "android",  */
   themeVariant: "light",
 });
 
@@ -94,3 +96,8 @@ function Timeline() {
 }
 
 export default Timeline;
+
+
+
+
+

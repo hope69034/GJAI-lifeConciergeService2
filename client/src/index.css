@@ -55,3 +55,8 @@ code {
 /* .css-in5br9{
 background: #73baad;
 } */
+/* windows헤더 */  
+.mbsc-windows.mbsc-calendar-button.mbsc-button.mbsc-font{
+  color: #02826a;
+font-weight: 600;
+}
