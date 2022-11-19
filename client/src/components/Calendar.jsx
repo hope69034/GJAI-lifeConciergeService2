@@ -1,9 +1,6 @@
-
 import { localeEn,Eventcalendar, localeKo,getJson, toast,setOptions, CalendarNav, Button, CalendarToday, SegmentedGroup, SegmentedItem } from '@mobiscroll/react';
 import React from "react";
 import "@mobiscroll/react/dist/css/mobiscroll.min.css";
- 
- 
 
 function Calender() {
 
