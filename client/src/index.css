@@ -30,7 +30,6 @@ code {
 /* 푸터 바텀메뉴 */
 .MuiBottomNavigation-root{
   background:#73baad;
-
 }
 /* 캘린더.윈도버전몇개더보기 */
 .mbsc-windows.mbsc-calendar-text-more .mbsc-calendar-label-text{
@@ -48,3 +47,11 @@ code {
   margin-left:30.2%;
   margin-right:30.2%;
 }
+/* + 버튼 */
+.css-1suf56w-MuiButtonBase-root-MuiFab-root{
+  background: #73baad;
+}
+/* +버튼 틀 */
+/* .css-in5br9{
+background: #73baad;
+} */
