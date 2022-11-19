@@ -12,6 +12,8 @@ import LabelBottomNavigation from './components/LabelBottomNavigation';
 import AddEvent from './components/AddEvent';
 
 
+
+
 function App() {
   const dispatch = useDispatch(); // store 공간안에 값을 저장하기 위해 userDispatch함수 호출
   useEffect(()=>{ // 화면이 랜더링 될때마다 서버에 사용자 session 정보가 있는지 없는지 검증하는 구문 세션이 있으면 로그인 되어있고 그렇지 않으면 로그인 되어있지 않다.
@@ -23,8 +25,9 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>  
+      
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={<Home/>}/>{/* timeline */}
           <Route path="/calendar" element={<Calendar/>}/>
           <Route path="/myProfile" element={<MyProfile/>}/>
           <Route path="/signup" element={<Signup/>}/>
@@ -32,7 +35,10 @@ function App() {
           <Route path="/addEvent" element={<AddEvent/>}/>
          {/*  <Route path="/test" element={<Test/>}/> */}
         </Routes>
-        <LabelBottomNavigation/>
+      
+      {/* 앱하단 메뉴 */}
+      <LabelBottomNavigation/>
+      
       </BrowserRouter>
     </div>
   );

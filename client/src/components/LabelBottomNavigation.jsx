@@ -6,6 +6,9 @@ import HomeIcon from '@mui/icons-material/Home';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import AutoAwesomeMotionIcon from '@mui/icons-material/AutoAwesomeMotion';
 
+/* import AddIcon from '@mui/icons-material/Add'; */
+
+
 export default function LabelBottomNavigation() {
   const [value, setValue] = React.useState('recents');
   const nav = useNavigate();
@@ -13,9 +16,11 @@ export default function LabelBottomNavigation() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
+ 
   return (
-    <BottomNavigation sx={{position:"fixed", width: "100%", bottom:0}} value={value} showLabels onChange={handleChange}>
+
+
+    <BottomNavigation sx={{ position:'fixed',  width: "100%", bottom:0}} value={value} showLabels onChange={handleChange}>
       <BottomNavigationAction
         onClick={()=>{nav("/")}}
         label="Home"
@@ -28,12 +33,20 @@ export default function LabelBottomNavigation() {
         value="calendar"
         icon={<CalendarMonthIcon />}
       />
-      <BottomNavigationAction
+
+{/* <BottomNavigationAction
+        onClick={()=>{nav("/addEvent")}}
+        label="Add"
+        value="Add"
+        icon={<AddIcon />}
+      /> */}
+
+        <BottomNavigationAction
         onClick={()=>{nav("/memo")}}
         label="Memo"
         value="memo"
         icon={<AutoAwesomeMotionIcon />}
-      />
+      />  
       
       <BottomNavigationAction 
         onClick={()=>{nav("/myProfile")}}
@@ -42,5 +55,12 @@ export default function LabelBottomNavigation() {
         icon={<PersonIcon/>} 
       />
     </BottomNavigation>
+
+
+
   );
 }
+
+
+
+ 

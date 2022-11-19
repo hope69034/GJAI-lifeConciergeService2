@@ -15,24 +15,26 @@ code {
 
 /* 세형 */
 
-/* 홈_어젠다 */
+/* 홈 어젠다 */
 .mbsc-event-group.mbsc-material {
   background: rgb(255, 255, 255);
 }
-/* 홈_+버튼 */
+/* 홈 +버튼 */
 .MuiBox-root.css-in5br9 {
-  z-index: 10;
+  z-index: 20;
 }
 /* 맨아래.헤더*/
 .MuiBottomNavigation-root.css-3mtf2r-MuiBottomNavigation-root {
-  z-index: 10;
+  z-index: 20;
 }
 /* 캘린더.윈도버전몇개더보기 */
 .mbsc-windows.mbsc-calendar-text-more .mbsc-calendar-label-text{
-  font-weight: 600;
+  /* font-weight: 600; */
   content: url("./img/iconUnder.png"); 
 }
 /* 캘린더.윈도우.월화수목 */
 .mbsc-windows.mbsc-calendar-body .mbsc-calendar-week-day{
   color: #0078d7;
 }
+ 
+ 

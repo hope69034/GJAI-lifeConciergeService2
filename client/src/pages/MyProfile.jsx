@@ -23,8 +23,10 @@ export default () => {
         {/* <Button onClick={()=>{console.log(session)}}>세션 데이터 확인</Button> */}
         {session.email?<MyProfile/>:<Login/>}
         <Snackbar/>
+
+        {/* 챗봇버튼 */}
         {/* <Link style={{position:"fixed", bottom:"80px", right:"10px"}} to='/chatbot'> <MessageIcon/> </Link> */}
-        <a href='https://hope69034-chatbotgreeni-psychotherapy-toa0l9.streamlit.app/' style={{position:"fixed", bottom:"80px", right:"10px"}}><MessageIcon></MessageIcon></a>
+        {/* <a href='https://hope69034-chatbotgreeni-psychotherapy-toa0l9.streamlit.app/' style={{position:"fixed", bottom:"80px", right:"10px"}}><MessageIcon></MessageIcon></a> */}
 
      
 
