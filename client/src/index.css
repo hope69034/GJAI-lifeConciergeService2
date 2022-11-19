@@ -42,10 +42,26 @@ code {
 }
 /* 로그인화면 캐릭터 이미지 */
 .greenihead{
-  width:40%;
-  margin:10%;
-  margin-left:30.2%;
-  margin-right:30.2%;
+/*    width: 30%; */
+  margin-bottom: 5%; 
+/*    margin-left: 10%; */
+font-size: 23px;
+    font-variant: all-petite-caps;
+}
+/* 로긴창 */
+.divLogin{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+/*   margin-top: 5%; */
+  padding:1px;
+}
+/* 로긴창 글씨*/
+.greeniWelcome{
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 10%;
 }
 /* + 버튼 */
 .css-1suf56w-MuiButtonBase-root-MuiFab-root{
@@ -59,4 +75,18 @@ background: #73baad;
 .mbsc-windows.mbsc-calendar-button.mbsc-button.mbsc-font{
   color: #02826a;
 font-weight: 600;
+}
+/* 그리니 챗봇 */
+.greeniChatbot{
+background: #ffffff;
+}
+/* 챗봇 전체블록*/
+.lfsaZN  {
+  background: #b10808;
+}
+.sc-jrcTuL {
+  background: #b10808;
+ }
+.rsc-container{
+  background: #b10808;
 }

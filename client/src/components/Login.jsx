@@ -6,7 +6,15 @@ import {useDispatch} from 'react-redux';
 import SnackBar from './FreqCompo/Snackbar';
 import Progress from './FreqCompo/Progress'
 
+
+import MessageIcon from '@mui/icons-material/Message';
+import { Link } from 'react-router-dom';
 import greenihead from '../img/greenihead.png'
+const chatbotButtonStyle={
+  marginLeft:'85%',
+  /* inlineSize:'3%', */
+  }
+
 
 const Login = () => {
   const nav = useNavigate();
@@ -51,12 +59,15 @@ const Login = () => {
  <div style={{backgrounImage : "url(" + greenihead + ")"  }}>  */}
  
 
-    <img src={ greenihead } className={'greenihead'} /> 
-
-
-    <div style={{   margin:"auto", width:"80%", border:"1px solid black", padding:"20px"}}> 
+    <div className='divLogin' style={{    width:"80%", padding:"20px"}}> 
     
-      
+    {/* <div className='divLogin' style={{    width:"80%", border:"1px solid black", padding:"20px"}}>  */}
+
+
+    <img src={ greenihead } className={'greenihead'} /> 
+    <h60 className='greeniWelcome'> Hello, My name is Greeni.</h60>
+
+
       <FormControl fullWidth>
         <TextField inputRef={emailRef} label='이메일' name='email' onChange={(e)=>{emailRef.current.value = e.target.value}}/><br></br>
         <TextField inputRef={pwRef} label='비밀번호' name='pw' type="password" onChange={(e)=>{pwRef.current.value = e.target.value;}}/><br></br>

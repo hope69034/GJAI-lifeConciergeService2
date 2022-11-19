@@ -37,7 +37,7 @@ function Calender() {
             data={myEvents}
             view={view}
             onEventClick={onEventClick}
-       />
+/>
     ); 
 }
 export default Calender
