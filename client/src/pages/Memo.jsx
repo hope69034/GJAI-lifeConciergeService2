@@ -7,6 +7,7 @@ const chatbotButtonStyle={
 marginLeft:'85%',
 inlineSize:'3%', 
 position:"fixed", bottom:"70px", right:"30px",
+zIndex:'20',
 }
 
 const Memo = () => {

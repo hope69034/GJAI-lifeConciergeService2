@@ -77,7 +77,7 @@ export default function LabelBottomNavigation() {
               onClick={() => {
                 nav("/myProfile");
               }}
-              label="MyPage"
+              label="MyProfile"
               value="myProfile"
               icon={<PersonIcon />}
             />
