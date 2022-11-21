@@ -9,11 +9,6 @@ import MessageIcon from '@mui/icons-material/Message';
 import { Link } from 'react-router-dom';
 
 import Home from '../pages/Home'
-const chatbotButtonStyle={
-marginLeft:'85%',
- 
-   
-}
 
 const DoorCompo = () => {
   

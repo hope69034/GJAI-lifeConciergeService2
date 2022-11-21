@@ -123,6 +123,7 @@ router.get('/lifeConcierge/api/session', (req,res)=>{
 })
 
 router.post('/lifeConcierge/api/showDailyEvent', (req,res)=>{
+  console.log('1111111')
   conn.query("select * from dailyevent where email = ?", [req.body.email], (err,rows)=>{
     if(err){
       res.send(err);
@@ -133,5 +134,6 @@ router.post('/lifeConcierge/api/showDailyEvent', (req,res)=>{
     }
   })
 });
+
 
 module.exports = router;

@@ -1,4 +1,4 @@
-import Signup from '../components/SignUp/Signup';
+import Signup from '../components/Signup/Signup';
 export default () => {
   return(
     <div>
