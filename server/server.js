@@ -20,7 +20,7 @@ const conn = new mysql_session({
   user:"root",
   password:"a246987",
   port:3306,
-  database:"lifeconcierge"
+  database:"lifeConcierge"
 })
 
 app.use(session({

@@ -4,6 +4,6 @@ module.exports = mysql.createConnection({
   user:"root",
   password:"a246987",
   port:3306,
-  database:"lifeconcierge"
+  database:"lifeConcierge"
 });
 
