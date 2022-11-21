@@ -123,7 +123,14 @@ router.get('/lifeConcierge/api/session', (req,res)=>{
 })
 
 router.post('/lifeConcierge/api/showDailyEvent', (req,res)=>{
-  console.log('1111111')
+  
+console.log('showDailyEvert 라우터 진입')
+
+/* 챗봇test */  
+/* console.log('이름: '+req.body.name)
+console.log('성별: '+req.body.gender)
+console.log('나이: '+req.body.age) */
+
   conn.query("select * from dailyevent where email = ?", [req.body.email], (err,rows)=>{
     if(err){
       res.send(err);

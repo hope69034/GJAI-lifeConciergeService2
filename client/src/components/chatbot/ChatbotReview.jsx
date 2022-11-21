@@ -46,17 +46,15 @@ class ChatbotReview extends Component {
 
 
         let { name, gender, age } = this.state; 
-
-
 /* 
-     let data = [name,gender,age]
-        axios.post('/chatbotUpdate' ,data ) 
+       let data = {
+        name:name.value,
+        gender:gender.value,
+        age:age.value
+      }
+        axios.post('/lifeConcierge/api/showDailyEvent' ,data ) 
         .then((res)=>{console.log('라우터다녀옴')})
-        .catch((res)=>{console.log('error')}) 
-
- */
-        
-        
+        .catch((res)=>{console.log('error')})  */
 
         return (
           /*   <form onSubmit={'/chatbotUpdate'} method='post'> */
