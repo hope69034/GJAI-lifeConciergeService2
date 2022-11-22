@@ -46,7 +46,7 @@ export default function LabelBottomNavigation() {
               }}
               label="Home"
               value="home"
-              icon={<HomeIcon />}
+              icon={<HomeIcon color="secondary"/>}
             />
             <BottomNavigationAction
               onClick={() => {
