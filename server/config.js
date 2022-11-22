@@ -8,18 +8,18 @@ module.exports = mysql.createConnection({
 }); */
 
 
-const mysql = require("mysql");
+/* const mysql = require("mysql");
 module.exports = mysql.createConnection({
   host:"localhost",
   user:"root",
   password:"!ing12924103",
   port:3306,
   database:"lifeConcierge"
-}); 
+});  */
 
 
 
-/* rds db 에러
+// rds db 
 const mysql = require("mysql");
 module.exports = mysql.createConnection({
   host:"project-db-stu.ddns.net",
@@ -28,4 +28,4 @@ module.exports = mysql.createConnection({
   port:3307,
   database:"hope69034"
 });
- */
+ 

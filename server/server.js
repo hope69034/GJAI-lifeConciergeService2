@@ -24,22 +24,22 @@ app.get('/', (req, res)=>{
   database:"lifeconcierge"
 }) */
 
-const conn = new mysql_session({
+/* const conn = new mysql_session({
   host:"localhost",
   user:"root",
   password:"!ing12924103",
   port:3306,
   database:"lifeConcierge"
-})
+}) */
 
-/* rds db 에러
+ //rds db  
 const conn = new mysql_session({
   host:"project-db-stu.ddns.net",
   user:"hope69034",
   password:"!shad5666",
   port:3307,
   database:"hope69034"
-}) */
+})  
 
 app.use(session({
   resave:false,
