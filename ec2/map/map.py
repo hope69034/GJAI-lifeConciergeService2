@@ -1,9 +1,7 @@
 #필수import
 from selenium import webdriver # 웹드라이버. 코랩이라 우리가 직접 볼 순 없지만 얘가 돌아다니면서 일을 해줌
 from selenium.webdriver.common.by import By # element를 찾을 때 쓰이는 parameter를 불러오는 역할
-#필수import
-import sys #파이썬내장모듈
-import pandas as pd#pip install pandas
+import sys #파이썬내장모듈, child_process와 연동(아규먼트받기)
 
 #크롬 드라이버의 각종 옵션들 생성 및 적용.
 options = webdriver.ChromeOptions()
