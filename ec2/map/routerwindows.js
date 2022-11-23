@@ -4,7 +4,6 @@ const router = express.Router();
 
 router.get('/', function (req, res) {    
   console.log('메인라우터 진입 성공')
-  //일단로컬로
   res.redirect("http://127.0.0.1:5500/map/user.html")
 });
 
@@ -17,7 +16,7 @@ router.post('/map', function (req, res) {
   //const result = spawn("python3", ["map.py",[userInput1,userInput2]]);
   //const result = spawn("python3", ["map.py"]);
   //const result = spawn("python", ["map.py"]);
-  const result = spawn("python3", ["map.py",userInput1,userInput2]);
+  const result = spawn("python", ["map.py",userInput1,userInput2]);
   console.log('파이썬 파일 변수 선언 성공') 
   result.stdout.on("data", (result) => {  
     console.log('stdout 진입 성공')
