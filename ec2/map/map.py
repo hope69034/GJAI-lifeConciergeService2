@@ -21,7 +21,9 @@ def main(sName,eName):
     time.sleep(5)#second
     # xpath 이용 태그 가져오기
     print(driver.find_element(By.XPATH, '//*[@id="info.flagsearch"]/div[6]/ul/li/div[1]/div/div[1]/p/span[1]/span[1]').text)
-    
+
 if __name__ == '__main__':
     main(sys.argv[1],sys.argv[2])
     #main('광주동구서남로1','광주서구내방로241번길10')
+#if __name__ == '__main__':
+#print('11','22')
