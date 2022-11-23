@@ -25,6 +25,8 @@ router.post('/map', function (req, res) {
     console.log(`파이썬 파일 변수 선언 성공  |  유저인풋1 : ${userInput1}, 유저인풋2 : ${userInput2}`)
     res.json(result.toString())
     //res.json(result.toString().slice(0,(result.toString().length-6)))
+
   }) 
 });
+
 module.exports = router;
