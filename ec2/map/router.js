@@ -5,7 +5,7 @@ const router = express.Router();
 router.get('/', function (req, res) {    
   console.log('메인라우터 진입 성공')
   //일단로컬로
-  res.redirect("http://127.0.0.1:5500/map/user.html")
+  res.redirect("http://127.0.0.1:5500/ec2/map/user.html")
 });
 
 router.post('/map', function (req, res) {    
