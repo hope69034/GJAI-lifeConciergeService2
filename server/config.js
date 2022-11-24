@@ -20,7 +20,19 @@ module.exports = mysql.createConnection({
 
 
 // rds db 
-const mysql = require("mysql");
+/* const mysql = require("mysql");
+module.exports = mysql.createConnection({
+  host:"project-db-stu.ddns.net",
+  user:"hope69034",
+  password:"!shad5666",
+  port:3307,
+  database:"hope69034"
+}); */
+
+
+
+// mysql2
+const mysql = require("mysql2");
 module.exports = mysql.createConnection({
   host:"project-db-stu.ddns.net",
   user:"hope69034",
@@ -28,4 +40,3 @@ module.exports = mysql.createConnection({
   port:3307,
   database:"hope69034"
 });
- 
