@@ -33,14 +33,14 @@ app.get('/', (req, res)=>{
 }) */
 
  //rds db  
-/*  const conn = new mysql_session({
+ const conn = new mysql_session({
   host:"project-db-stu.ddns.net",
   user:"hope69034",
   password:"!shad5666",
   port:3307,
   database:"hope69034"
 })  
- */
+
  
 
 
@@ -50,7 +50,7 @@ app.use(session({
   resave:false,
   saveUninitialized:true,
   secret:"smart",
- /* store:conn */  
+ store:conn  
 }))
 
 app.use(router);
