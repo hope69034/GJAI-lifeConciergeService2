@@ -8,14 +8,14 @@ module.exports = mysql.createConnection({
 }); */
 
 
-/* const mysql = require("mysql");
+const mysql = require("mysql");
 module.exports = mysql.createConnection({
   host:"localhost",
   user:"root",
   password:"!ing12924103",
   port:3306,
   database:"lifeConcierge"
-});  */
+}); 
 
 
 
@@ -32,11 +32,11 @@ module.exports = mysql.createConnection({
 
 
 // mysql2
-const mysql = require("mysql2");
+/* const mysql = require("mysql2");
 module.exports = mysql.createConnection({
   host:"project-db-stu.ddns.net",
   user:"hope69034",
   password:"!shad5666",
   port:3307,
   database:"hope69034"
-});
+}); */
